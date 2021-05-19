@@ -18,6 +18,10 @@ class LineNav extends Component {
     };
   }
 
+  static defaultProps = {
+    showPermalink: false,
+  };
+
   onPermalink(e) {
     // let this throw if no support
     window.history.pushState(null, document.title, e.target.search);
@@ -92,7 +96,7 @@ class LineNav extends Component {
               search
             </button>
           </Filter>}
-        {command &&
+        {this.props.showPermalink && command &&
           <a
             onClick={this.onPermalink}
             title="Permalink"
