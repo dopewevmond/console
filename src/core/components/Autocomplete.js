@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/Autocomplete.css';
 
 class Autocomplete extends Component {
   render() {

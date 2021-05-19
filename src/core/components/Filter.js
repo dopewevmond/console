@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import debounce from 'lodash/debounce';
+import './styles/Filter.css';
 
 class Filter extends Component {
   componentDidUpdate(prevProps) {

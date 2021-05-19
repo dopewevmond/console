@@ -1,6 +1,6 @@
 {
   "name": "@cryptosat/jsconsole",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "now": {
     "alias": "2.jsconsole.com"
   },
@@ -95,9 +95,7 @@
     "start": "REACT_APP_VERSION=$npm_package_version node scripts/start.js",
     "build": "rm -rf build; PUBLIC_URL=/ REACT_APP_VERSION=$npm_package_version node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "styles": "cat src/*.css > src/core/jsconsole.css",
-    "watch": "nodemon -w src/ -e css -x 'npm run styles'",
-    "lib": "rm -rf dist; npm run styles; NODE_ENV=production babel src/core --out-dir dist --copy-files --ignore '__tests__'",
+    "lib": "rm -rf dist; NODE_ENV=production babel src/core --out-dir dist --copy-files --ignore '__tests__'",
     "deploy": "npm run build && s3_website push",
     "prepare": "npm run lib"
   },

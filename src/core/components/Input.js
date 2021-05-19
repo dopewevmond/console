@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import './styles/Input.css';
+import './assets/prompt.svg';
+import './assets/in.svg';
+
 
 // TODO import Autocomplete from './Autocomplete';
 import keycodes from '../lib/keycodes';

@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Filter from './Filter';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import './styles/LineNav.css';
+import './assets/copy.svg';
+import './assets/link.svg';
+import './assets/search.svg';
+import './assets/expand.svg';
+
 
 class LineNav extends Component {
   constructor(props) {

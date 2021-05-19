@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import './styles/App.css';
+import './styles/DarkTheme.css';
 
 import Console from './Console';
 import Input from '../containers/Input';
