@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './core/store';
 import './index.css';
-import './core/jsconsole.css';
-const App = require('./core/containers/App').default;
 
+import { App, store } from './core';
 
 ReactDOM.render(
   <div>
