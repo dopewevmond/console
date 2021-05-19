@@ -27,8 +27,6 @@ export const bindConsole = __console => {
   });
 };
 
-export const getContainer = () => container;
-
 export function createContainer() {
   container = document.createElement('iframe');
   container.width = container.height = 1;

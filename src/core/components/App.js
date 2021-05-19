@@ -77,7 +77,7 @@ class App extends Component {
     if (query) {
       this.onRun(query);
     } else {
-      this.onRun(':welcome');
+      // this.onRun(':welcome');
     }
   }
 
