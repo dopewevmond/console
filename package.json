@@ -1,6 +1,6 @@
 {
   "name": "@cryptosat/jsconsole",
-  "version": "2.1.2",
+  "version": "0.1.2",
   "now": {
     "alias": "2.jsconsole.com"
   },
@@ -167,5 +167,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://github.com/remy/jsconsole#readme"
+  "homepage": "https://github.com/remy/jsconsole#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
