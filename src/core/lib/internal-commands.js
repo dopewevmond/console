@@ -80,6 +80,7 @@ const commands = {
   history,
   set,
   welcome,
+  about,
   version: () => version,
 };
 
