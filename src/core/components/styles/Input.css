@@ -3,6 +3,7 @@
   width: 100%;
   z-index: 10;
   position: relative;
+  background: white;
 }
 
 .top .Input {
