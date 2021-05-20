@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import './styles/App.css';
+import './styles/Shell.css';
 import './styles/DarkTheme.css';
 
 import Console from './Console';
@@ -14,7 +14,7 @@ import internalCommands from '../lib/internal-commands';
 // this is lame, but it's a list of key.code that do stuff in the input that we _want_.
 const doStuffKeys = /^(Digit|Key|Num|Period|Semi|Comma|Slash|IntlBackslash|Backspace|Delete|Enter)/;
 
-class App extends Component {
+class Shell extends Component {
   constructor(props) {
     super(props);
     this.onRun = this.onRun.bind(this);
@@ -128,6 +128,6 @@ class App extends Component {
   }
 }
 
-App.contextType = StoreContext;
+Shell.contextType = StoreContext;
 
-export default App;
+export default Shell;
