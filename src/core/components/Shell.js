@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import './styles/Shell.css';
 import './styles/DarkTheme.css';
 
-import Console from './Console';
+import Output from './Output';
 import Input from '../containers/Input';
 import StoreContext from '../stores/StoreContext';
 
@@ -110,7 +110,7 @@ class Shell extends Component {
         ref={e => (this.app = e)}
         className={className}
       >
-        <Console
+        <Output
           ref={e => (this.console = e)}
           commands={commands}
           reverse={layout === 'top'}

@@ -1,3 +1,3 @@
-import Console2 from './components/Console2';
+import Console from './components/Console';
 
-export { Console2 as Console };
+export { Console };
