@@ -21,6 +21,12 @@ class App extends Component {
   }
 
   async onRun(command) {
+    await this.process(command);
+    this.input.focus();
+    this.input.scrollIntoView();
+  }
+
+  async process(command) {
     const console = this.console;
 
     if (command[0] !== ':') {
