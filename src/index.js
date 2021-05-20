@@ -3,9 +3,14 @@ import './index.css';
 
 import { Console } from './core';
 
+const payload = {
+  welcome: 'hello, world!',
+  add: (x, y) => x + y,
+};
+
 ReactDOM.render(
   <div>
-    <Console />
+    <Console payload={payload}/>
   </div>,
   document.getElementById('root')
 );

@@ -27,7 +27,7 @@ export const bindConsole = __console => {
   });
 };
 
-export function createContainer() {
+export function createContainer(payload) {
   container = document.createElement('iframe');
   container.width = container.height = 1;
   container.style.opacity = 0;
@@ -36,6 +36,7 @@ export function createContainer() {
   container.style.top = '-100px';
   container.setAttribute('name', '<proxy>');
   document.body.appendChild(container);
+  Object.assign(container.contentWindow, payload || {});
   setContainer(container);
 }
 

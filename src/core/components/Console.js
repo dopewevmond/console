@@ -8,7 +8,7 @@ class Console extends Component {
   render() {
     return (
       <Provider context={StoreContext} store={store}>
-        <Shell />
+        <Shell {...this.props}/>
       </Provider>
     );
   }
