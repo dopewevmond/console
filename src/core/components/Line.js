@@ -3,9 +3,6 @@ import LineNav from './LineNav';
 import which from '../lib/which-type';
 import './styles/Line.css';
 import './styles/Types.css';
-import './assets/in.svg';
-import './assets/out.svg';
-import './assets/error.svg';
 
 class Line extends Component {
   constructor(props) {
