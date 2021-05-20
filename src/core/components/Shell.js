@@ -101,7 +101,7 @@ class Shell extends Component {
   render() {
     const { commands = [], theme, layout } = this.props;
 
-    const className = classnames(['App', `theme-${theme}`, layout]);
+    const className = classnames(['Shell', `theme-${theme}`, layout]);
 
     return (
       <div
