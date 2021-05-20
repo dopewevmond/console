@@ -80,7 +80,6 @@ class Shell extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.payload);
     createContainer(this.props.payload);
     bindConsole(this.console);
     const query = decodeURIComponent(window.location.search.substr(1));

@@ -1,6 +1,6 @@
 {
   "name": "@cryptosat/jsconsole",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Web based javascript console",
   "repository": {
     "type": "git",
