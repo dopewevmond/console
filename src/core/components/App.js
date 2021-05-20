@@ -6,6 +6,7 @@ import './styles/DarkTheme.css';
 
 import Console from './Console';
 import Input from '../containers/Input';
+import StoreContext from '../StoreContext';
 
 import run, { bindConsole, createContainer } from '../lib/run';
 import internalCommands from '../lib/internal-commands';
@@ -127,6 +128,6 @@ class App extends Component {
   }
 }
 
-App.contextTypes = { store: PropTypes.object };
+App.contextType = StoreContext;
 
 export default App;

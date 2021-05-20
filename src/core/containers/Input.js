@@ -1,5 +1,10 @@
 import { connect } from 'react-redux';
 import Input from '../components/Input';
+import StoreContext from '../StoreContext';
 import { addHistory } from '../actions/Input';
 
-export default connect(({ history }) => ({ history }), { addHistory })(Input);
+export default connect(
+  ({ history }) => ({ history }),
+  { addHistory },
+  null,
+  { context: StoreContext })(Input);
