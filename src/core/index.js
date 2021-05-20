@@ -1,4 +1,3 @@
-import store from './store';
-import App from './containers/App';
+import Console2 from './components/Console2';
 
-export { App, store };
+export { Console2 as Console };

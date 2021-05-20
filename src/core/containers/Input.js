@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Input from '../components/Input';
-import StoreContext from '../StoreContext';
+import StoreContext from '../stores/StoreContext';
 import { addHistory } from '../actions/Input';
 
 export default connect(

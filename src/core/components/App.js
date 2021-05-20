@@ -6,7 +6,7 @@ import './styles/DarkTheme.css';
 
 import Console from './Console';
 import Input from '../containers/Input';
-import StoreContext from '../StoreContext';
+import StoreContext from '../stores/StoreContext';
 
 import run, { bindConsole, createContainer } from '../lib/run';
 import internalCommands from '../lib/internal-commands';
