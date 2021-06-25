@@ -15,6 +15,11 @@ import internalCommands from '../lib/internal-commands';
 const doStuffKeys = /^(Digit|Key|Num|Period|Semi|Comma|Slash|IntlBackslash|Backspace|Delete|Enter)/;
 
 class Shell extends Component {
+
+  static defaultProps = {
+    theme: 'dark',
+  }
+
   constructor(props) {
     super(props);
     this.onRun = this.onRun.bind(this);
