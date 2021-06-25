@@ -3,23 +3,18 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './styles/Shell.css';
 import './styles/DarkTheme.css';
-
 import Output from './Output';
 import Input from '../containers/Input';
 import StoreContext from '../stores/StoreContext';
-
 import run, { bindConsole, createContainer } from '../lib/run';
 import internalCommands from '../lib/internal-commands';
 
 // this is lame, but it's a list of key.code that do stuff in the input that we _want_.
 const doStuffKeys = /^(Digit|Key|Num|Period|Semi|Comma|Slash|IntlBackslash|Backspace|Delete|Enter)/;
 
+const DEFAULT_THEME = 'dark';
+
 class Shell extends Component {
-
-  static defaultProps = {
-    theme: 'dark',
-  }
-
   constructor(props) {
     super(props);
     this.onRun = this.onRun.bind(this);
@@ -104,8 +99,12 @@ class Shell extends Component {
   }
 
   render() {
-    const { commands = [], theme, layout } = this.props;
-
+    let {
+      commands = [],
+      theme,
+      layout
+    } = this.props;
+    theme = theme ? theme : DEFAULT_THEME;
     const className = classnames(['Shell', `theme-${theme}`, layout]);
 
     return (
