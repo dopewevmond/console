@@ -12,9 +12,12 @@ import internalCommands from '../lib/internal-commands';
 // this is lame, but it's a list of key.code that do stuff in the input that we _want_.
 const doStuffKeys = /^(Digit|Key|Num|Period|Semi|Comma|Slash|IntlBackslash|Backspace|Delete|Enter)/;
 
-const DEFAULT_THEME = 'dark';
-
 class Shell extends Component {
+
+  static defaultProps = {
+    defaultTheme: 'dark',
+  }
+
   constructor(props) {
     super(props);
     this.onRun = this.onRun.bind(this);
@@ -104,7 +107,7 @@ class Shell extends Component {
       theme,
       layout
     } = this.props;
-    theme = theme ? theme : DEFAULT_THEME;
+    theme = theme ? theme : this.props.defaultTheme;
     const className = classnames(['Shell', `theme-${theme}`, layout]);
 
     return (
