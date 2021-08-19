@@ -2,7 +2,6 @@
   position: absolute;
   right: .25rem;
   top: .5rem;
-  z-index: 10;
   user-select: none;
 }
 
@@ -33,7 +32,6 @@
   background-position: center;
   background-size: 60%;
   outline: none;
-  z-index: 10;
 }
 
 .icon:hover {
