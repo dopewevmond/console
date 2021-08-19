@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   background: white;
+  overflow: hidden;
 }
 
 .top .Input {
