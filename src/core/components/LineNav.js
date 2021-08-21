@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Filter from './Filter';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import './styles/LineNav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopy, faSearch } from '@fortawesome/pro-light-svg-icons'
 
 
 class LineNav extends Component {
@@ -95,18 +97,9 @@ class LineNav extends Component {
             enabled={filter}
           >
             <button onClick={this.toggleFilter} className="icon search">
-              search
+              <FontAwesomeIcon icon={faSearch}/>
             </button>
           </Filter>}
-        {this.props.showPermalink && command &&
-          <a
-            onClick={this.onPermalink}
-            title="Permalink"
-            className="icon link"
-            href={`?${escape(command)}`}
-          >
-            link
-          </a>}
         <CopyToClipboard text={text}>
           <button
             title={copyAs}
@@ -117,7 +110,7 @@ class LineNav extends Component {
               }
             }}
           >
-            copy
+            <FontAwesomeIcon icon={faCopy}/>
           </button>
         </CopyToClipboard>
       </div>

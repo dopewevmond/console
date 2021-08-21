@@ -31,7 +31,7 @@ class Filter extends Component {
             }}
             onKeyDown={e => e.stopPropagation()}
             type="text"
-          />
+          placeholder="Search" />
         </span>
         {children}
       </span>
