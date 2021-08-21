@@ -10,7 +10,12 @@
   position: relative;
   left: 1.75rem;
   line-height: 1rem;
-  background-color: #00000014;
+  background-color: #ebebeb;
+  opacity: 0.95;
+}
+
+.error .Filter .inner {
+  background: #ebdcdc;
 }
 
 .Filter.is-hidden .inner {

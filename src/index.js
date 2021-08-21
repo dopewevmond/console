@@ -9,7 +9,7 @@ const payload = {
 };
 
 ReactDOM.render(
-  <div>
+  <div style={{height: '100vh'}}>
     <Console payload={payload}/>
   </div>,
   document.getElementById('root')

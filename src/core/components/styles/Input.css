@@ -16,6 +16,10 @@
   box-shadow: 0px 1px 1px rgba(0,0,0,.4);
 }
 
+.Input textarea {
+  box-sizing: border-box;
+}
+
 .Input:before {
   position: absolute;
   content: '';

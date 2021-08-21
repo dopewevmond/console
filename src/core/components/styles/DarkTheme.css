@@ -50,6 +50,12 @@
   color: #c678dd;
 }
 
-.theme-dark .Filter .inner {
-  background-color: #ffffff14;
+.theme-dark .error .Filter .inner {
+  background: #38191a;
 }
+
+
+.theme-dark .Filter .inner {
+  background-color: #353940;
+}
+
